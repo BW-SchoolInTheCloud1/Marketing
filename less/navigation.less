@@ -1,0 +1,43 @@
+.navbar {
+  display: flex;
+  background: @nav-bg;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+  border-radius: 0 0 10px 10px;
+  font-size: 1.8rem;
+  position: sticky;
+  top: 0;
+
+  img {
+    height: 8rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+  }
+
+  a {
+    text-decoration: none;
+    color: @nav_text_color;
+  }
+
+  .button-div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+
+    a {
+      background: @button-bg;
+      color: @merino;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+
+      font-family: block, sans-serif;
+    }
+  }
+}
