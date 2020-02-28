@@ -130,11 +130,21 @@ html {
   font-size: 62.5%;
   font-family: block, sans-serif;
 }
+html body {
+  width: 100%;
+  overflow-x: hidden;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+}
 header .header-img-div {
   background-image: url(../img/header-img.jpg);
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
 section {
   display: flex;
@@ -202,6 +212,7 @@ section .card-wraper .card img {
   justify-content: space-between;
   align-items: center;
   padding: 0 5%;
+  width: 100%;
   font-size: 1.6rem;
   position: sticky;
   top: 0;
