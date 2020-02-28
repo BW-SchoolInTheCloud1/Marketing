@@ -258,14 +258,33 @@ section .card-wraper .card {
   border-image: initial;
   padding: 0 0 0 0.5rem;
 }
+@media (max-width:650px) {
+  section .card-wraper .card {
+    padding-bottom: 1em;
+  }
+}
 section .card-wraper .card h3 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-decoration: underline;
   margin: 2rem 0;
 }
+@media (max-width:500px) {
+  section .card-wraper .card h3 {
+    padding-top: 0;
+    margin: 1rem 0;
+  }
+}
 section .card-wraper .card p {
   font-size: 1.6rem;
+  color: gray;
+  line-height: 2rem;
+}
+@media (max-width:650px) {
+  section .card-wraper .card p {
+    font-size: 1.3rem;
+    line-height: 1.2em;
+  }
 }
 @media (max-width:650px) {
   section .card-wraper .card {
