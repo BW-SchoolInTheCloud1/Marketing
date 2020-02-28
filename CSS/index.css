@@ -130,9 +130,11 @@ html {
   font-size: 62.5%;
   font-family: block, sans-serif;
 }
-header {
+header .header-img-div {
   background-image: url(../img/header-img.jpg);
   background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 section {
   display: flex;
@@ -141,34 +143,83 @@ section {
   background: #f4f1de;
   padding: 8rem 0;
 }
+section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
 section .card-wraper {
   justify-content: center;
   width: 55%;
+  min-width: 936px;
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width:950px) {
+  section .card-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 700px;
+  }
+}
+@media (max-width:650px) {
+  section .card-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
+  }
+}
 section .card-wraper .card {
-  width: 30%;
+  width: 280px;
   height: 400px;
   margin: 1rem;
   background: #fcfcfc;
   border-radius: 10px;
+  box-shadow: rgba(73, 73, 73, 0.2) 0px 0px 4px 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0 0 0 0.5rem;
+}
+@media (max-width:650px) {
+  section .card-wraper .card {
+    width: 400px;
+    height: 280px;
+  }
+}
+section .card-wraper .card img {
+  width: 80%;
+}
+@media (max-width:650px) {
+  section .card-wraper .card img {
+    width: 50%;
+  }
 }
 .navbar {
   display: flex;
   background: #e07a5f;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5rem;
-  border-radius: 0 0 10px 10px;
-  font-size: 1.8rem;
+  padding: 0 5%;
+  font-size: 1.6rem;
   position: sticky;
   top: 0;
 }
+@media (max-width: 700px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+}
 .navbar img {
-  height: 8rem;
+  width: 12rem;
   margin: 0;
   padding: 0;
+}
+@media (max-width: 700px) {
+  .navbar img {
+    width: 8rem;
+  }
 }
 .navbar .nav-items {
   display: flex;
@@ -179,10 +230,20 @@ section .card-wraper .card {
   text-decoration: none;
   color: #28262c;
 }
+@media (max-width: 700px) {
+  .navbar a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 700px) {
+  .navbar #home {
+    display: none;
+  }
+}
 .navbar .button-div {
   display: flex;
   justify-content: space-evenly;
-  width: 300px;
+  width: 30%;
 }
 .navbar .button-div a {
   background: #28262c;

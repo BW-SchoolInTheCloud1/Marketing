@@ -1,4 +1,6 @@
-header {
+header .header-img-div {
   background-image: url(../img/header-img.jpg);
   background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }

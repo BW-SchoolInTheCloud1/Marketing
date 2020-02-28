@@ -5,19 +5,56 @@ section {
   background: @section-bg;
   padding: 8rem 0;
 
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5rem;
+  }
+
   .card-wraper {
     justify-content: center;
 
     width: 55%;
+    min-width: 936px;
     display: flex;
     flex-wrap: wrap;
 
+    @media @mini-tablet {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 700px;
+    }
+
+    @media @large-phone {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 450px;
+    }
+
     .card {
-      width: 30%;
+      width: 280px;
       height: 400px;
       margin: 1rem;
       background: @alabaster;
       border-radius: 10px;
+      box-shadow: rgba(73, 73, 73, 0.2) 0px 0px 4px 0px;
+      border-width: initial;
+      border-style: none;
+      border-color: initial;
+      border-image: initial;
+      padding: 0 0 0 0.5rem;
+
+      @media @large-phone {
+        width: 400px;
+        height: 280px;
+      }
+
+      img {
+        width: 80%;
+        @media @large-phone {
+          width: 50%;
+        }
+      }
     }
   }
 }
