@@ -1,4 +1,10 @@
-.navbar {
-  display: flex;
-  background: red;
+nav {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+nav img {
+  width: 12rem;
+}
+nav .nav-links ul a {
+  color: ;
 }

@@ -128,11 +128,76 @@ table {
 }
 html {
   font-size: 62.5%;
-  font-family: block, sans-serif;
+  font-family: "varela Round", sans-serif;
 }
 html body {
   width: 100%;
   overflow-x: hidden;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e07a5f;
+  padding: 0 5%;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+@media (max-width: 750px) {
+  nav {
+    font-size: 1.2rem;
+    padding: 0 2%;
+  }
+}
+nav img {
+  width: 12rem;
+  cursor: pointer;
+}
+@media (max-width: 750px) {
+  nav img {
+    width: 8rem;
+  }
+}
+nav button {
+  padding: 9px 25px;
+  background-color: #28262c;
+  color: #fcfcfc;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+nav button:hover {
+  background-color: #fcfcfc;
+  color: #28262c;
+}
+nav button:focus {
+  outline: 0;
+}
+@media (max-width: 750px) {
+  nav button {
+    font-size: 1rem;
+    padding: 6px 18px;
+  }
+}
+nav .nav-links {
+  display: flex;
+}
+nav .nav-links li {
+  padding: 0 40px;
+}
+nav .nav-links li a {
+  color: #28262c;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+nav .nav-links li a:hover {
+  color: #fcfcfc;
+}
+@media (max-width: 750px) {
+  nav .nav-links #home {
+    display: none;
+  }
 }
 header {
   width: 100vw;
@@ -206,60 +271,7 @@ section .card-wraper .card img {
     width: 50%;
   }
 }
-.navbar {
-  display: flex;
-  background: #e07a5f;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5%;
-  width: 100%;
-  font-size: 1.6rem;
-  position: sticky;
-  top: 0;
-}
-@media (max-width: 700px) {
-  .navbar {
-    justify-content: flex-start;
-  }
-}
-.navbar img {
-  width: 12rem;
-  margin: 0;
-  padding: 0;
-}
-@media (max-width: 700px) {
-  .navbar img {
-    width: 8rem;
-  }
-}
-.navbar .nav-items {
-  display: flex;
-  justify-content: space-around;
-  width: 25%;
-}
-.navbar a {
-  text-decoration: none;
-  color: #28262c;
-}
-@media (max-width: 700px) {
-  .navbar a {
-    font-size: 1.4rem;
-  }
-}
-@media (max-width: 700px) {
-  .navbar #home {
-    display: none;
-  }
-}
-.navbar .button-div {
-  display: flex;
-  justify-content: space-evenly;
-  width: 30%;
-}
-.navbar .button-div a {
+footer {
+  height: 400px;
   background: #28262c;
-  color: #f4f1de;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-family: block, sans-serif;
 }

@@ -130,9 +130,24 @@ html {
   font-size: 62.5%;
   font-family: block, sans-serif;
 }
+html body {
+  width: 100%;
+  overflow-x: hidden;
+}
+nav img {
+  width: 12rem;
+}
 header {
+  width: 100vw;
+  height: 100vh;
+}
+header .header-img-div {
   background-image: url(../img/header-img.jpg);
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
 section {
   display: flex;
@@ -141,53 +156,60 @@ section {
   background: #f4f1de;
   padding: 8rem 0;
 }
+section h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
 section .card-wraper {
   justify-content: center;
   width: 55%;
+  min-width: 936px;
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width:950px) {
+  section .card-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 700px;
+  }
+}
+@media (max-width:650px) {
+  section .card-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 450px;
+  }
+}
 section .card-wraper .card {
-  width: 30%;
+  width: 280px;
   height: 400px;
   margin: 1rem;
   background: #fcfcfc;
   border-radius: 10px;
+  box-shadow: rgba(73, 73, 73, 0.2) 0px 0px 4px 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 0 0 0 0.5rem;
 }
-.navbar {
-  display: flex;
-  background: #e07a5f;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 5rem;
-  border-radius: 0 0 10px 10px;
-  font-size: 1.8rem;
-  position: sticky;
-  top: 0;
+@media (max-width:650px) {
+  section .card-wraper .card {
+    width: 400px;
+    height: 280px;
+  }
 }
-.navbar img {
-  height: 8rem;
-  margin: 0;
-  padding: 0;
+section .card-wraper .card img {
+  width: 80%;
 }
-.navbar .nav-items {
-  display: flex;
-  justify-content: space-around;
-  width: 25%;
+@media (max-width:650px) {
+  section .card-wraper .card img {
+    width: 50%;
+  }
 }
-.navbar a {
-  text-decoration: none;
-  color: #28262c;
-}
-.navbar .button-div {
-  display: flex;
-  justify-content: space-evenly;
-  width: 300px;
-}
-.navbar .button-div a {
+footer {
+  height: 400px;
   background: #28262c;
-  color: #f4f1de;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-family: block, sans-serif;
 }
