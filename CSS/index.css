@@ -128,7 +128,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  font-family: "varela Round", sans-serif;
+  font-family: "varela Round", "sans-serif", sans-serif;
 }
 html body {
   width: 100%;
@@ -136,8 +136,8 @@ html body {
 }
 nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   background-color: #e07a5f;
   padding: 0 5%;
   font-weight: bold;
@@ -211,6 +211,12 @@ header .header-img-div {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(2px);
+}
+header .header-img-div h1 {
+  z-index: 2;
 }
 .about-header {
   width: 100vw;
@@ -319,7 +325,7 @@ section {
   background: #f4f1de;
   padding: 8rem 0;
 }
-section h1 {
+section h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5rem;
@@ -357,6 +363,9 @@ section .card-wraper .card {
   border-color: initial;
   border-image: initial;
   padding: 0 0 0 0.5rem;
+}
+section .card-wraper .card:hover {
+  border: 2px solid lightgray;
 }
 @media (max-width:650px) {
   section .card-wraper .card {
@@ -401,10 +410,10 @@ section .card-wraper .card img {
   }
 }
 footer {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
   background: #28262c;
 }
 footer .footer-credits {

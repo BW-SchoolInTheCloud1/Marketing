@@ -1,11 +1,7 @@
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: @section-bg;
-  padding: 8rem 0;
+  .direction(column, center, @section-bg, 8rem 0);
 
-  h1 {
+  h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 5rem;
@@ -20,15 +16,11 @@ section {
     flex-wrap: wrap;
 
     @media @mini-tablet {
-      display: flex;
-      flex-wrap: wrap;
-      min-width: 700px;
+      .media(wrap, 700px);
     }
 
     @media @large-phone {
-      display: flex;
-      flex-wrap: wrap;
-      min-width: 450px;
+      .media(wrap, 450px);
     }
 
     .card {
@@ -43,6 +35,9 @@ section {
       border-color: initial;
       border-image: initial;
       padding: 0 0 0 0.5rem;
+      &:hover {
+        border: 2px solid lightgray;
+      }
       @media @large-phone {
         padding-bottom: 1em;
       }

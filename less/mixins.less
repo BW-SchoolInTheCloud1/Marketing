@@ -1,1 +1,26 @@
+//Parametric Mixins
+.flex(@justify,@align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
 
+.media(@wrap,@width) {
+  display: flex;
+  flex-wrap: @wrap;
+  min-width: @width;
+}
+
+.direction(@direction,@align,@background,@padding) {
+  display: flex;
+  flex-direction: @direction;
+  align-items: @align;
+  background: @background;
+  padding: @padding;
+}
+
+display: flex;
+flex-direction: column;
+align-items: center;
+background: @section-bg;
+padding: 8rem 0;

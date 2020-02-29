@@ -1,9 +1,5 @@
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: @section-bg;
-  padding: 8rem 0;
+  .direction(column, center, @section-bg, 8rem 0);
 
   h1 {
     font-size: 2rem;
@@ -20,15 +16,11 @@ section {
     flex-wrap: wrap;
 
     @media @mini-tablet {
-      display: flex;
-      flex-wrap: wrap;
-      min-width: 700px;
+      .media(wrap, 700px);
     }
 
     @media @large-phone {
-      display: flex;
-      flex-wrap: wrap;
-      min-width: 450px;
+      .media(wrap, 450px);
     }
 
     .card {
