@@ -273,6 +273,9 @@ section .card-wraper .card {
   border-color: initial;
   border-image: initial;
 }
+section .card-wraper .card:hover {
+  border: 2px solid lightgray;
+}
 @media (max-width:650px) {
   section .card-wraper .card {
     width: 400px;
