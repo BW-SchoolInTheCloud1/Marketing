@@ -223,21 +223,35 @@ header .header-img-div {
   width: 100%;
   z-index: -1;
 }
-header .header-img-div .h1-div {
-  width: 80%;
+header .header-img-div .heading {
   position: fixed;
   z-index: 0;
+}
+header .header-img-div .heading h1 {
+  font-size: 3rem;
   color: #fcfcfc;
-  font-size: 4rem;
-  text-transform: uppercase;
+  font-weight: bold;
 }
 .about-header-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/about-img.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+  z-index: -1;
+}
+.about-header-img-div .heading {
+  position: fixed;
+  z-index: 0;
+}
+.about-header-img-div .heading h1 {
+  color: #fcfcfc;
+  font-size: 3rem;
+  font-weight: bold;
 }
 section {
   display: flex;
@@ -348,6 +362,7 @@ section .card-wraper .card img {
   }
 }
 .page-body {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;

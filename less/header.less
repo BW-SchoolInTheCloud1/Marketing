@@ -16,23 +16,37 @@ header {
     height: 100%;
     width: 100%;
     z-index: -1;
-    .h1-div {
-      width: 80%;
+    .heading {
       position: fixed;
-
       z-index: 0;
-      color: @alabaster;
-      font-size: 4rem;
-      text-transform: uppercase;
+      h1 {
+        font-size: 3rem;
+        color: @alabaster;
+        font-weight: bold;
+      }
     }
   }
 }
 
 .about-header-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/about-img.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+
+  z-index: -1;
+  .heading {
+    position: fixed;
+    z-index: 0;
+    h1 {
+      color: @alabaster;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+  }
 }
