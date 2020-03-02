@@ -211,12 +211,6 @@ header .header-img-div {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(2px);
-}
-header .header-img-div h1 {
-  z-index: 2;
 }
 .about-header {
   width: 100vw;
@@ -264,6 +258,10 @@ section .card-wraper {
   }
 }
 section .card-wraper .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   height: 400px;
   margin: 1rem;
@@ -274,11 +272,23 @@ section .card-wraper .card {
   border-style: none;
   border-color: initial;
   border-image: initial;
-  padding: 0 0 0 0.5rem;
 }
 @media (max-width:650px) {
   section .card-wraper .card {
-    padding-bottom: 1em;
+    width: 400px;
+    height: 280px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width:500px) {
+  section .card-wraper .card {
+    width: 400px;
+    height: 280px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 section .card-wraper .card h3 {
@@ -287,27 +297,28 @@ section .card-wraper .card h3 {
   text-decoration: underline;
   margin: 2rem 0;
 }
+@media (max-width:650px) {
+  section .card-wraper .card h3 {
+    padding-top: 0;
+    margin: 1rem;
+  }
+}
 @media (max-width:500px) {
   section .card-wraper .card h3 {
     padding-top: 0;
-    margin: 1rem 0;
+    margin: 1rem;
   }
 }
 section .card-wraper .card p {
   font-size: 1.6rem;
   color: gray;
   line-height: 2rem;
+  margin: 0 1rem;
 }
 @media (max-width:650px) {
   section .card-wraper .card p {
     font-size: 1.3rem;
     line-height: 1.2em;
-  }
-}
-@media (max-width:650px) {
-  section .card-wraper .card {
-    width: 400px;
-    height: 280px;
   }
 }
 section .card-wraper .card img {
@@ -351,7 +362,7 @@ section .card-wraper {
     min-width: 450px;
   }
 }
-section .card-wraper .card {
+section .card-wraper .about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,53 +378,79 @@ section .card-wraper .card {
   border-image: initial;
   padding: 2rem 0;
 }
-section .card-wraper .card a {
+section .card-wraper .about a {
   width: 4rem;
   margin-top: 2rem;
 }
-section .card-wraper .card:hover {
+section .card-wraper .about:hover {
   border: 2px solid lightgray;
 }
 @media (max-width:650px) {
-  section .card-wraper .card {
-    padding-bottom: 1em;
+  section .card-wraper .about {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 400px;
+    height: 240px;
   }
 }
-section .card-wraper .card h3 {
+@media (max-width:500px) {
+  section .card-wraper .about {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 400px;
+    height: 240px;
+  }
+}
+section .card-wraper .about .team-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .card-wraper .about .team-description h3 {
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: underline;
   margin: 2rem 0;
 }
-@media (max-width:500px) {
-  section .card-wraper .card h3 {
-    padding-top: 0;
-    margin: 1rem 0;
-  }
-}
-section .card-wraper .card p {
+section .card-wraper .about .team-description p {
   font-size: 1.6rem;
   color: gray;
   line-height: 2rem;
 }
 @media (max-width:650px) {
-  section .card-wraper .card p {
-    font-size: 1.3rem;
-    line-height: 1.2em;
+  section .card-wraper .about .team-description p {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width:500px) {
+  section .card-wraper .about .team-description p {
+    font-size: 1.6rem;
   }
 }
 @media (max-width:650px) {
-  section .card-wraper .card {
-    width: 400px;
-    height: 280px;
+  section .card-wraper .about .team-description a img {
+    width: 3rem;
   }
 }
-section .card-wraper .card img {
+@media (max-width:500px) {
+  section .card-wraper .about .team-description a img {
+    width: 3rem;
+  }
+}
+section .card-wraper .about .team {
   width: 80%;
 }
 @media (max-width:650px) {
-  section .card-wraper .card img {
-    width: 50%;
+  section .card-wraper .about .team {
+    width: 40%;
+  }
+}
+@media (max-width:500px) {
+  section .card-wraper .about .team {
+    width: 40%;
   }
 }
 footer {

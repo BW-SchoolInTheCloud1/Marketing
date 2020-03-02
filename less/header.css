@@ -9,12 +9,6 @@ header .header-img-div {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(2px);
-}
-header .header-img-div h1 {
-  z-index: 2;
 }
 .about-header {
   width: 100vw;
