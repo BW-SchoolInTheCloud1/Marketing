@@ -363,6 +363,7 @@ section .card-wraper .card img {
 }
 .page-body {
   position: absolute;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
