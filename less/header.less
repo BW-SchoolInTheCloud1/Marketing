@@ -1,14 +1,30 @@
 header {
   width: 100vw;
   height: 100vh;
+  @media @large-phone {
+    height: 400px;
+  }
 
   .header-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(../img/header-img.jpg);
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     height: 100%;
     width: 100%;
+    z-index: -1;
+    .h1-div {
+      width: 80%;
+      position: fixed;
+
+      z-index: 0;
+      color: @alabaster;
+      font-size: 4rem;
+      text-transform: uppercase;
+    }
   }
 }
 

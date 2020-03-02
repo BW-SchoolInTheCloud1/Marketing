@@ -9,6 +9,11 @@ header .header-img-div {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+  z-index: -1;
+}
+header .header-img-div h1 {
+  position: fixed;
+  z-index: 0;
 }
 .about-header {
   width: 100vw;

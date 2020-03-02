@@ -142,6 +142,8 @@ nav {
   padding: 0 5%;
   font-weight: bold;
   font-size: 1.6rem;
+  position: sticky;
+  top: 0;
 }
 @media (max-width: 750px) {
   nav {
@@ -204,13 +206,30 @@ header {
   width: 100vw;
   height: 100vh;
 }
+@media (max-width:650px) {
+  header {
+    height: 400px;
+  }
+}
 header .header-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url(../img/header-img.jpg);
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+  z-index: -1;
+}
+header .header-img-div .h1-div {
+  width: 80%;
+  position: fixed;
+  z-index: 0;
+  color: #fcfcfc;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 .about-header {
   width: 100vw;
@@ -332,19 +351,20 @@ section .card-wraper .card img {
     width: 50%;
   }
 }
-section {
+.page-body {
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #f4f1de;
   padding: 8rem 0;
+  z-index: 1;
 }
-section h2 {
+.page-body h2 {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 5rem;
 }
-section .card-wraper {
+.page-body .card-wraper {
   justify-content: center;
   width: 55%;
   min-width: 936px;
@@ -352,20 +372,20 @@ section .card-wraper {
   flex-wrap: wrap;
 }
 @media (max-width:950px) {
-  section .card-wraper {
+  .page-body .card-wraper {
     display: flex;
     flex-wrap: wrap;
     min-width: 700px;
   }
 }
 @media (max-width:650px) {
-  section .card-wraper {
+  .page-body .card-wraper {
     display: flex;
     flex-wrap: wrap;
     min-width: 450px;
   }
 }
-section .card-wraper .about {
+.page-body .card-wraper .about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -381,15 +401,15 @@ section .card-wraper .about {
   border-image: initial;
   padding: 2rem 0;
 }
-section .card-wraper .about a {
+.page-body .card-wraper .about a {
   width: 4rem;
   margin-top: 2rem;
 }
-section .card-wraper .about:hover {
+.page-body .card-wraper .about:hover {
   border: 2px solid lightgray;
 }
 @media (max-width:650px) {
-  section .card-wraper .about {
+  .page-body .card-wraper .about {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 1.5rem;
@@ -398,7 +418,7 @@ section .card-wraper .about:hover {
   }
 }
 @media (max-width:500px) {
-  section .card-wraper .about {
+  .page-body .card-wraper .about {
     flex-direction: row;
     justify-content: space-between;
     padding: 0 1.5rem;
@@ -406,53 +426,53 @@ section .card-wraper .about:hover {
     height: 240px;
   }
 }
-section .card-wraper .about .team-description {
+.page-body .card-wraper .about .team-description {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section .card-wraper .about .team-description h3 {
+.page-body .card-wraper .about .team-description h3 {
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: underline;
   margin: 2rem 0;
 }
-section .card-wraper .about .team-description p {
+.page-body .card-wraper .about .team-description p {
   font-size: 1.6rem;
   color: gray;
   line-height: 2rem;
 }
 @media (max-width:650px) {
-  section .card-wraper .about .team-description p {
+  .page-body .card-wraper .about .team-description p {
     font-size: 1.6rem;
   }
 }
 @media (max-width:500px) {
-  section .card-wraper .about .team-description p {
+  .page-body .card-wraper .about .team-description p {
     font-size: 1.6rem;
   }
 }
 @media (max-width:650px) {
-  section .card-wraper .about .team-description a img {
+  .page-body .card-wraper .about .team-description a img {
     width: 3rem;
   }
 }
 @media (max-width:500px) {
-  section .card-wraper .about .team-description a img {
+  .page-body .card-wraper .about .team-description a img {
     width: 3rem;
   }
 }
-section .card-wraper .about .team {
+.page-body .card-wraper .about .team {
   width: 80%;
 }
 @media (max-width:650px) {
-  section .card-wraper .about .team {
+  .page-body .card-wraper .about .team {
     width: 40%;
   }
 }
 @media (max-width:500px) {
-  section .card-wraper .about .team {
+  .page-body .card-wraper .about .team {
     width: 40%;
   }
 }
