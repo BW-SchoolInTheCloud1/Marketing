@@ -1,6 +1,7 @@
 header {
   width: 100vw;
   height: 100vh;
+
   @media @large-phone {
     height: 400px;
   }
@@ -15,14 +16,17 @@ header {
     background-attachment: fixed;
     height: 100%;
     width: 100%;
-    z-index: -1;
+    position: absolute;
+    z-index: -2;
+
     .heading {
       position: fixed;
-      z-index: 0;
+      z-index: -1;
       h1 {
         font-size: 3rem;
         color: @alabaster;
         font-weight: bold;
+        margin: 0 0.5rem;
       }
     }
   }
@@ -38,15 +42,17 @@ header {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
+  position: absolute;
+  z-index: -2;
 
-  z-index: -1;
   .heading {
     position: fixed;
-    z-index: 0;
+    z-index: -1;
     h1 {
       color: @alabaster;
       font-size: 3rem;
       font-weight: bold;
+      margin: 0 0.5rem;
     }
   }
 }

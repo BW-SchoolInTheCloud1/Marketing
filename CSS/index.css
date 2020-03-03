@@ -221,16 +221,18 @@ header .header-img-div {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  position: absolute;
+  z-index: -2;
 }
 header .header-img-div .heading {
   position: fixed;
-  z-index: 0;
+  z-index: -1;
 }
 header .header-img-div .heading h1 {
   font-size: 3rem;
   color: #fcfcfc;
   font-weight: bold;
+  margin: 0 0.5rem;
 }
 .about-header-img-div {
   display: flex;
@@ -242,16 +244,18 @@ header .header-img-div .heading h1 {
   background-attachment: fixed;
   height: 100%;
   width: 100%;
-  z-index: -1;
+  position: absolute;
+  z-index: -2;
 }
 .about-header-img-div .heading {
   position: fixed;
-  z-index: 0;
+  z-index: -1;
 }
 .about-header-img-div .heading h1 {
   color: #fcfcfc;
   font-size: 3rem;
   font-weight: bold;
+  margin: 0 0.5rem;
 }
 section {
   display: flex;
@@ -259,11 +263,6 @@ section {
   align-items: center;
   background: #f4f1de;
   padding: 8rem 0;
-}
-section h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 5rem;
 }
 section .card-wraper {
   justify-content: center;
@@ -362,14 +361,11 @@ section .card-wraper .card img {
   }
 }
 .page-body {
-  position: absolute;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: #f4f1de;
   padding: 8rem 0;
-  z-index: 1;
 }
 .page-body h2 {
   font-size: 2rem;
