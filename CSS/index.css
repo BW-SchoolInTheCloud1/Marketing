@@ -241,6 +241,8 @@ header .heading h1 {
   color: #fcfcfc;
   font-weight: bold;
   margin: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-shadow: 2px 2px #000000;
 }
 header .about-header-img-div {
   display: flex;
@@ -271,6 +273,8 @@ header .heading h1 {
   font-size: 3rem;
   font-weight: bold;
   margin: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-shadow: 2px 2px #000000;
 }
 section {
   display: flex;
