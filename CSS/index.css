@@ -224,17 +224,25 @@ header .header-img-div {
   position: absolute;
   z-index: -2;
 }
-header .header-img-div .heading {
-  position: fixed;
+header .heading {
+  position: absolute;
+  top: 50%;
   z-index: -1;
 }
-header .header-img-div .heading h1 {
+@media (max-width: 750px) {
+  header .heading {
+    position: fixed;
+    top: 20%;
+  }
+}
+header .heading h1 {
+  position: fixed;
   font-size: 3rem;
   color: #fcfcfc;
   font-weight: bold;
   margin: 0 0.5rem;
 }
-.about-header-img-div {
+header .about-header-img-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -247,11 +255,18 @@ header .header-img-div .heading h1 {
   position: absolute;
   z-index: -2;
 }
-.about-header-img-div .heading {
-  position: fixed;
+header .heading {
+  position: absolute;
   z-index: -1;
 }
-.about-header-img-div .heading h1 {
+@media (max-width: 750px) {
+  header .heading {
+    position: fixed;
+    top: 20%;
+  }
+}
+header .heading h1 {
+  position: fixed;
   color: #fcfcfc;
   font-size: 3rem;
   font-weight: bold;

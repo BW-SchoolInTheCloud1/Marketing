@@ -16,39 +16,51 @@ header {
     background-attachment: fixed;
     height: 100%;
     width: 100%;
+
     position: absolute;
     z-index: -2;
-
-    .heading {
+  }
+  .heading {
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    @media @tablet {
       position: fixed;
-      z-index: -1;
-      h1 {
-        font-size: 3rem;
-        color: @alabaster;
-        font-weight: bold;
-        margin: 0 0.5rem;
-      }
+      top: 20%;
+    }
+    h1 {
+      position: fixed;
+      font-size: 3rem;
+      color: @alabaster;
+      font-weight: bold;
+      margin: 0 0.5rem;
     }
   }
-}
 
-.about-header-img-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../img/about-img.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  z-index: -2;
+  .about-header-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/about-img.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
 
+    position: absolute;
+    z-index: -2;
+  }
   .heading {
-    position: fixed;
+    position: absolute;
+
     z-index: -1;
+    @media @tablet {
+      position: fixed;
+      top: 20%;
+    }
     h1 {
+      position: fixed;
       color: @alabaster;
       font-size: 3rem;
       font-weight: bold;
