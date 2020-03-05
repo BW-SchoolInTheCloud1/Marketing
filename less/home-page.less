@@ -1,6 +1,22 @@
 section {
   .direction(column, center, @section-bg, 8rem 0);
 
+  #intro {
+    justify-content: center;
+
+    width: 50%;
+    @media @large-phone {
+      width: 85%;
+    }
+
+    p {
+      font-size: 1.6rem;
+      color: gray;
+      line-height: 3rem;
+      margin-bottom: 4rem;
+    }
+  }
+
   .card-wraper {
     justify-content: center;
 

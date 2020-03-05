@@ -283,6 +283,21 @@ section {
   background: #f4f1de;
   padding: 8rem 0;
 }
+section #intro {
+  justify-content: center;
+  width: 50%;
+}
+@media (max-width:650px) {
+  section #intro {
+    width: 85%;
+  }
+}
+section #intro p {
+  font-size: 1.6rem;
+  color: gray;
+  line-height: 3rem;
+  margin-bottom: 4rem;
+}
 section .card-wraper {
   justify-content: center;
   width: 55%;
